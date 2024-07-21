@@ -1,4 +1,6 @@
 # Experimental!
+A! ←^ $"_°[_]⊏_"/$"⊓__"⨬" ∘""°□"⊙(▽:@⊙⊸⧻-@A)↥0◇⊃±⌵⊢ # Array swizzle replacement (from Omnikar)
+
 Sbox ← ◿4294967296 ⌊×ⁿ32 2⌵∿+1
 Hex ← ⊏:"0123456789abcdef" [⊃(⌊÷16)(◿16)]
 
@@ -8,23 +10,22 @@ Rot ← ¯♭⍉☇1≡°⍉↯4 [7_12_17_22 5_9_14_20 4_11_16_23 6_10_15_21]
 Pad ← ⊂:⊂: ⊓⍜⊙⋯⬚0↯⊚8_8 ×8: ⊸⍜+(-:⍜÷⌈64) 9 .-1⧻. ⊂:128
 
 Round ← (
-  ⌊⊸÷16, λcab
+  ⌊⊸÷16, ⊃⋅⋅∘⊙∘
   ⨬(
-    ⍜⋯(↥∩↧¬⋊bdbc ⬚0↙∞_32),
-  | ⍜⋯(↥∩↧¬⋊dcdb ⬚0↙∞_32),◿16+1×5
+    ⍜⋯(↥∩↧¬A!bdbc ⬚0↙∞_32),
+  | ⍜⋯(↥∩↧¬A!dcdb ⬚0↙∞_32),◿16+1×5
   | ⍜⋯(/≠↘1) ,◿16+5×3
-  | ⍜⋯(≠↥¬⋊dbc ⬚0↙∞_32) ,◿16×7
+  | ⍜⋯(≠↥¬A!dbc ⬚0↙∞_32) ,◿16×7
   ) # F G ABCD i  
-  λacdbecd
+  ⊃⊃⊃⊙⋅⊙∘⋅∘⋅⋅⋅⋅∘⋅⋅⊙∘
   ⍥(◿4294967296+)3 ⊙⊓⊓⊢Sbox(/+×ⁿ8ⁿ:2°⊏⊏) # F ABCD i
-  λcab
-  ◿4294967296 ⍜⊡+1 [⋊dbbc]: ⍜⊙(⬚0↙32⋯)↻ ⊡:Rot
+  ⊃⋅⋅∘⊙∘
+  ◿4294967296 ⍜⊡+1 [A!dbbc]: ⍜⊙(⬚0↙32⋯)↻ ⊡:Rot
 )
 
 MDV ← ∧(◿4294967296+⊸∧Round ⇡64 ¤) :ABCD ↯∞_16_4 Pad
 
 DisplayHex ← ♭⍜⊙⇌☇1 ∵Hex ∵⍜⋯(⇌⬚0↯4_8)
-DisplayHex ← ♭⍜⊙⇌☇1 ∵Hex ∵⍜⋯(⇌⬚0↯4_8)
 
-MDV utf "The quick brown fox jumps over the lazy dog"
+MDV utf₈ "The quick brown fox jumps over the lazy dog"
 DisplayHex
