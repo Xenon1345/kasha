@@ -1,4 +1,3 @@
-# Experimental!
 A! ↚^ $"_°[_]⊏_"/$"⊓__"⨬" ∘""°□"⊙(▽:@⊙⊸⧻-@A)↥0◇⊃±⌵⊢ # Array swizzle replacement (from Omnikar)
 
 Sbox ↚ ◿4294967296 ⌊×ⁿ32 2⌵∿+1
