@@ -1,4 +1,5 @@
-~ "md5.ua" ~ DisplayHex MD₅
+~ "util.ua" ~ DisplayHex
+~ "md5.ua" ~ MD₅
 
 ---test
 MD₅ utf₈ "The quick brown fox jumps over the lazy dog"

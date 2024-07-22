@@ -1,12 +1,9 @@
-A! ↚^ $"_°[_]⊏_"/$"⊓__"⨬" ∘""°□"⊙(▽:@⊙⊸⧻-@A)↥0◇⊃±⌵⊢ # Array swizzle replacement (from Omnikar)
+~ "util.ua" ~ A! DisplayHex Pad
 
 Sbox ↚ ◿4294967296 ⌊×ⁿ32 2⌵∿+1
-Hex ↚ ⊏:"0123456789abcdef" [⊃(⌊÷16)(◿16)]
 
 ABCD ↚ [1732584193 4023233417 2562383102 271733878]
 Rot ↚ ¯♭⍉☇1≡°⍉↯4 [7_12_17_22 5_9_14_20 4_11_16_23 6_10_15_21]
-
-Pad ↚ ⊂:⊂: ⊓⍜⊙⋯⬚0↯⊚8_8 ×8: ⊸⍜+(-:⍜÷⌈64) 9 .-1⧻. ⊂:128
 
 Round ↚ (
   ⌊⊸÷16, ⊃⋅⋅∘⊙∘
@@ -23,8 +20,6 @@ Round ↚ (
 )
 
 MD₅ ← ∧(◿4294967296+⊸∧Round ⇡64 ¤) :ABCD ↯∞_16_4 Pad
-
-DisplayHex ← ♭⍜⊙⇌☇1 ∵Hex ∵⍜⋯(⇌⬚0↯4_8)
 
 ---test
 MD₅ utf₈ "The quick brown fox jumps over the lazy dog"
