@@ -19,6 +19,8 @@ Round ↚ (
   ◿4294967296 ⍜⊡+1 [A!dbbc]: ⍜⊙(⬚0↙32⋯)↻ ⊡:Rot
 )
 
+# MD5 hash function
+# hash ? message
 MD₅ ← ∧(◿4294967296+⊸∧Round ⇡64 ¤) :ABCD ↯∞_16_4 Pad
 
 ---test
